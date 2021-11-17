@@ -35,6 +35,6 @@ namespace Employee.Web.Models.Context
                 );
         }
 
-        public DbSet<Employee> Emplyees { get; set; }
+        public DbSet<Employee> Employees { get; set; }
     }
 }
