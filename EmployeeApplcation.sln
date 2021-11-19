@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31424.327
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Employee.Web", "Employee.Web\Employee.Web.csproj", "{E1889769-03D8-4BCA-B225-AE4984A344CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Employee.Web", "Employee.Web\Employee.Web.csproj", "{E1889769-03D8-4BCA-B225-AE4984A344CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Employee.UnitTesting", "Employee.UnitTesting\Employee.UnitTesting.csproj", "{4FF96DF9-C97D-43E9-BC93-F69B0AF1F6E2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Employee.UnitTesting", "Employee.UnitTesting\Employee.UnitTesting.csproj", "{4FF96DF9-C97D-43E9-BC93-F69B0AF1F6E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Employee.IntegrationTesting", "Employee.IntegrationTesting\Employee.IntegrationTesting.csproj", "{68861C40-DFC5-4B2C-AA52-9B9079446518}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{4FF96DF9-C97D-43E9-BC93-F69B0AF1F6E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4FF96DF9-C97D-43E9-BC93-F69B0AF1F6E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4FF96DF9-C97D-43E9-BC93-F69B0AF1F6E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68861C40-DFC5-4B2C-AA52-9B9079446518}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68861C40-DFC5-4B2C-AA52-9B9079446518}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68861C40-DFC5-4B2C-AA52-9B9079446518}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68861C40-DFC5-4B2C-AA52-9B9079446518}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
