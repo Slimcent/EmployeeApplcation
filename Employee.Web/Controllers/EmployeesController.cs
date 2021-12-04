@@ -4,16 +4,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Employee.Web.Models;
+using Employee.Web.Validation;
 
 namespace Employee.Web.Controllers
 {
     public class EmployeesController : Controller
     {
         private readonly IEmployeeRepository _repo;
+        private readonly AccountNumberValidation _validation;
 
         public EmployeesController(IEmployeeRepository repo)
         {
             _repo = repo;
+            _validation = new AccountNumberValidation();
         }
 
         public IActionResult Index()
@@ -33,6 +36,12 @@ namespace Employee.Web.Controllers
         {
             if (!ModelState.IsValid)
             {
+                return View(employee);
+            }
+
+            if (!_validation.IsValid(employee.AccountNumber))
+            {
+                ModelState.AddModelError("AccountNumber", "Account Number is Invald");
                 return View(employee);
             }
 

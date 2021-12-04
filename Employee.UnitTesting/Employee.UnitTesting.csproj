@@ -24,4 +24,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Employee.Web\Employee.Web.csproj" />
+  </ItemGroup>
+
 </Project>
